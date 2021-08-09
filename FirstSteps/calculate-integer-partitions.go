@@ -4,7 +4,7 @@ func Partitions(n int) int {
 
 func CalculatePartitions(currentSum int, maxValue int) int {
 	if currentSum == maxValue {
-		return 1 + CalculatePartitions(currentSum, maxValue - 1)
+		return 1 + CalculatePartitions(currentSum, maxValue - 1);
 	}
 	if maxValue == 0 || currentSum < 0 {
 		return 0
